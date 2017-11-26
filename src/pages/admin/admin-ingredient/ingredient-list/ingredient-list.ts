@@ -28,6 +28,6 @@ export class IngredientListPage {
   }
 
   update(ingredient){
-    this.navCtrl.push(IngredientFormPage, {id:ingredient.id});
+    this.navCtrl.push(IngredientFormPage);
   }
 }
