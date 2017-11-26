@@ -3,6 +3,8 @@ import { NavController, NavParams } from 'ionic-angular';
 import {IngredientService} from '../../../../providers/ingredient-service/ingredient-service'
 import {Ingredient} from '../../../../model/Ingredient'
 import{IngredientFormPage} from '../ingredient-forms/ingredient-forms'
+
+import { HomePage } from '../../../../pages/home/home';
 @Component({
   selector: 'page-ingredient-list',
   templateUrl: 'ingredient-list.html'
@@ -10,7 +12,7 @@ import{IngredientFormPage} from '../ingredient-forms/ingredient-forms'
 export class IngredientListPage {
 
   ingredientList: Ingredient[];
-  constructor(public navCtrl: NavController,public navParams: NavParams, public ingredientService: IngredientService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public ingredientService: IngredientService) {
     this.ingredientList = [];
   }
 
@@ -25,7 +27,7 @@ export class IngredientListPage {
 
   newIngredient(event){
     alert("aaaaaaaa");
-    this.navCtrl.push(IngredientFormPage);
+    this.navCtrl.push(HomePage);
   }
 
   // update(ingredient){

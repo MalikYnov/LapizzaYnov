@@ -25,7 +25,9 @@ export class IngredientFormPage{
     ionViewDidLoad() {
       //let id = this.route.snapshot.params['id'];
       this.update = false;
-
+      this.ingredient.name= " ";
+      this.ingredient.weight= " ";
+      this.ingredient.price = 0;
   
       // if(id != null){
       //   this.update = true,
