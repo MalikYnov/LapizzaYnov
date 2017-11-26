@@ -3,10 +3,8 @@ Malik Verdiere
 
 ionic View : de759924
 
-J'ai eu des petits soucu avec mon api, Donc pour la gestion je le fait en local, mais pour les ingredients l'api fonctionne.
-En esperant que tu sois sois compréhensif.
-
-
+J'ai eu des petits souci avec mon Api, Donc pour la gestion des pizza je la fait en local, mais pour la gestions des  ingrédients l'api fonctionne.
+En espérant que tu sois compréhensif.
 
 
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
