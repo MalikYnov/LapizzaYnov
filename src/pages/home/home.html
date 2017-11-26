@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>La pizza Ynov</ion-title>
-    <button ion-button icon-only style="float:right">
+    <button ion-button icon-only click="displayCart($event)" style="float:right">
         <ion-icon name="cart"></ion-icon>
       </button>
   </ion-navbar>
@@ -18,7 +18,7 @@
               <p>
                   {{pizza.desc}}
               </p>
-              <button ion-item>
+              <button ion-item click="addPizza($event)">
                   <ion-icon name="add" item-start></ion-icon>
                   ajouter
                 </button>

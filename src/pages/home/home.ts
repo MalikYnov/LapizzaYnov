@@ -22,5 +22,8 @@ export class HomePage {
   addPizza($event){
     this.storage.set('pizza', event.target);
   }
+  displayCart($event){
+    alert(this.storage.get('pizza'));
+  }
 
 }
