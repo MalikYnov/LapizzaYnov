@@ -27,7 +27,7 @@ export class IngredientListPage {
     this.navCtrl.push(IngredientFormPage);
   }
 
-  update(ingredient){
-    this.navCtrl.push(IngredientFormPage);
-  }
+  // update(ingredient){
+  //   this.navCtrl.push(IngredientFormPage);
+  // }
 }

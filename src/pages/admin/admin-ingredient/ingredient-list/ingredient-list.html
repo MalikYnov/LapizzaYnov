@@ -29,7 +29,6 @@
           Ajouter un ingredient
         </button>
         <div *ngFor="let ingredient of ingredientList">
-
             <ion-card>
                 <ion-card-content>
                   <ion-card-title>
@@ -38,7 +37,10 @@
                   <p>
                       {{ingredient.weight}}
                   </p>
-                  <button ion-item (click)="update(pizza)">
+                  <p>
+                      {{ingredient.price}}
+                  </p>
+                  <!-- <button ion-item (click)="update(ingredient)"> -->
                       <ion-icon name="add" item-start></ion-icon>
                       Modifier
                     </button>
