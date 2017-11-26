@@ -1,17 +1,33 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>La pizza Ynov</ion-title>
+    <button ion-button icon-only style="float:right">
+        <ion-icon name="cart"></ion-icon>
+      </button>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-</ion-content>
+    <div *ngFor="let pizza of pizzaList">
+        <ion-card>
+            <img src="{{pizza.picture}}"/>
+            <ion-card-content>
+              <ion-card-title>
+                {{pizza.name}}
+                </ion-card-title>
+              <p>
+                  {{pizza.desc}}
+              </p>
+              <button ion-item>
+                  <ion-icon name="add" item-start></ion-icon>
+                  ajouter
+                </button>
+                <button ion-item>
+                    <ion-icon name="eye" item-start></ion-icon>
+                    voir
+                  </button>
+            </ion-card-content>
+          </ion-card>
+      
+    </div>
+  </ion-content>
