@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+// import { NavController } from 'ionic-angular';
 import {IngredientService} from '../../../../providers/ingredient-service/ingredient-service'
-import {Ingredient} from '../../../../model/Ingredient'
+// import {Ingredient} from '../../../../model/Ingredient'
 import { Validators, FormGroup, FormControl } from '@angular/forms';
 @Component({
   selector: 'page-ingredient-forms',
