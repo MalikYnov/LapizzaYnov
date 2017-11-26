@@ -13,7 +13,6 @@ export class IngredientFormPage{
   
 
     // private ingredient:Ingredient;
-    private update:boolean;
     ingredient:Ingredient;
     constructor(public navCtrl: NavController, public navParams: NavParams,private ingredientService :IngredientService) { 
       // this.ingredient.name= " ";
@@ -24,10 +23,9 @@ export class IngredientFormPage{
   
     ionViewDidLoad() {
       //let id = this.route.snapshot.params['id'];
-      this.update = false;
-      this.ingredient.name= " ";
-      this.ingredient.weight= " ";
-      this.ingredient.price = 0;
+      this.ingredient.name= "";
+      this.ingredient.weight= "";
+      this.ingredient.price = null;
   
       // if(id != null){
       //   this.update = true,
