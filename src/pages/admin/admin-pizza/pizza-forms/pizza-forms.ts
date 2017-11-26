@@ -1,33 +1,33 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 // import { NavController } from 'ionic-angular';
-import {IngredientService} from '../../../../providers/ingredient-service/ingredient-service'
-import {Ingredient} from '../../../../model/Ingredient'
+import {PizzaService} from '../../../../providers/pizza-service/pizza-service'
+import {Pizza} from '../../../../model/Pizza'
 import { Validators, FormGroup, FormControl } from '@angular/forms';
 @Component({
-  selector: 'page-ingredient-forms',
-  templateUrl: 'ingredient-forms.html'
+  selector: 'page-pizza-forms',
+  templateUrl: 'pizza-forms.html'
 })
 
-export class IngredientFormPage{
+export class PizzaFormPage{
   
 
     // private ingredient:Ingredient;
-    ingredient:Ingredient;
+    pizza:Pizza;
+    desc:string;
     name:string;
-    weight:string;
     price:number;
-    constructor(public navCtrl: NavController, public navParams: NavParams,private ingredientService :IngredientService) { 
-      this.ingredient.name= " ";
-      this.ingredient.weight= " ";
-      this.ingredient.price = 0;
+    constructor(public navCtrl: NavController, public navParams: NavParams,private pizzaService :PizzaService) { 
+      this.pizza.name= " ";
+      this.pizza.desc= " ";
+      this.pizza.price = 0;
     }
     
   
     ionViewDidLoad() {
       //let id = this.route.snapshot.params['id'];
       this.name= "";
-      this.weight= "";
+      this.desc= "";
       this.price = null;
   
       // if(id != null){
@@ -49,15 +49,13 @@ export class IngredientFormPage{
       //  }else{
 
       
-      this.ingredient.name = this.name;
-      this.ingredient.weight = this.weight;
-      this.ingredient.price = this.price;
+      this.pizza.name = this.name;
+      this.pizza.desc = this.desc;
+      this.pizza.price = this.price;
       alert("eeeeeee");
-      this.ingredientService.create(this.ingredient).subscribe(data => {
-      alert(data);
+      this.pizzaService.create(this.pizza);
       this.navCtrl.pop();
-      
-      });
+    
       }
     // }
   }

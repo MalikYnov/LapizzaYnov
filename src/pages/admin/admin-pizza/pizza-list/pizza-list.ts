@@ -6,8 +6,8 @@ import{PizzaFormPage} from '../pizza-forms/pizza-forms'
 
 import { HomePage } from '../../../../pages/home/home';
 @Component({
-  selector: 'page-ingredient-list',
-  templateUrl: 'ingredient-list.html'
+  selector: 'page-pizza-list',
+  templateUrl: 'pizza-list.html'
 })
 export class PizzaListPage {
 

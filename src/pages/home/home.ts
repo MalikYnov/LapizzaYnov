@@ -4,8 +4,8 @@ import { NavController, NavParams, Nav } from 'ionic-angular';
 import {PizzaService} from '../../providers/pizza-service/pizza-service'
 import {DisplayPizza} from '../display-pizza/display-pizza'
 import { Storage } from '@ionic/storage';
-
 import { ToastController } from 'ionic-angular';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'

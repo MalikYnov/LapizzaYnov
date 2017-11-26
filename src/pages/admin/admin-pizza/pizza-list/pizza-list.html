@@ -22,21 +22,21 @@
   </div>  -->
 
   <ion-content>
-      <button ion-item (click)="newIngredient($event)">
+      <button ion-item (click)="newPizza($event)">
           <ion-icon name="add" item-start> </ion-icon>
-          Ajouter un ingredient
+          Ajouter une pizza
         </button>
 
-         <div *ngFor="let ingredient of ingredientList">
+         <div *ngFor="let pizza of pizzaList">
             <ion-card>
                 <ion-card-content>
                   <ion-card-title>
-                    {{ingredient.name}}
+                    {{pizza.name}}
                     </ion-card-title>
                   <p>
-                      {{ingredient.weight}}
+                      {{pizza.price}}
                   </p>
-                  <button ion-item (click)="update(ingredient)">
+                  <button ion-item (click)="update(pizza)">
                       <ion-icon name="create" item-start></ion-icon>
                     </button>
 
