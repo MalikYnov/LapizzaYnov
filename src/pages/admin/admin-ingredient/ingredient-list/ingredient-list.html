@@ -20,3 +20,20 @@
       </tbody>
     </table>
   </div>  -->
+
+  <ion-content>
+    <div class="row header">
+      <div class="col">Utility Company Name</div>
+      <div class="col">Service Code</div>
+      <div class="col">Pay Limit</div>
+      <div class="col">Account Number to Use</div>
+      <div class="col"></div>
+    </div>
+    <div class="row" *ngFor="let ingredient of ingredientsList">
+      <div class="col">{{ingredient.name}}</div>
+      <div class="col">{{ingredient.weight}}</div>
+      <div class="col">{{ingredient.price}} </div>
+      <!-- <div class="col">{{data.account}}</div>
+      <div class="col"><button class="button" ng-click="ctrl.add($index)">Add</button></div> -->
+    </div>
+</ion-content>
