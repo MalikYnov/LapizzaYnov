@@ -23,7 +23,13 @@
             <p>
                 {{pizza.desc}}
             </p>
-
+            <p>
+              {{pizza.price}}
+            </p>
+            <button ion-item (click)="addPizza(pizza)">
+                <ion-icon name="add" item-start></ion-icon>
+                ajout rapide
+            </button>
           </ion-card-content>
         </ion-card>
 </ion-content>
