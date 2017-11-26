@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-
 import {IngredientListPage} from '../../pages/admin/admin-ingredient/ingredient-list/ingredient-list';
-
-import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 import { DisplayPizza } from '../display-pizza/display-pizza';
 

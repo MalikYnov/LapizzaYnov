@@ -10,7 +10,7 @@ j'utilise donc un fichier de doonée Json "pizza.json" pour récupérer une list
 @Injectable()
 export class PizzaService {
 
-    private readonly url = "https://lapizza-y-malik10.c9users.io/pizza/"
+    // private readonly url = "https://lapizza-y-malik10.c9users.io/pizza/"
     public PizzaList: Array<Pizza> = new Array<Pizza>();
     constructor(public http: HttpClient) {
       this.http.get("assets/pizza.json")

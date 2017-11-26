@@ -11,7 +11,7 @@ import { Validators, FormGroup, FormControl } from '@angular/forms';
 export class IngredientFormPage{
   
     public form:FormGroup;
-    private ingredient:Ingredient;
+    // private ingredient:Ingredient;
     private update:boolean;
     constructor(private ingredientService :IngredientService) { }
   
