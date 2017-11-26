@@ -45,7 +45,8 @@ export class HomePage {
 
   displayPizza(pizza){
     let _id = pizza.id;
-      this.navCtrl.push(DisplayPizza, {id:'1'})
+    alert(pizza.id);
+    this.navCtrl.push(DisplayPizza, {id:1})
     
   }
 
