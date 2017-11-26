@@ -25,8 +25,8 @@ export class HomePage {
     this.pizzaList = this.pizzaService.get();
   }
 
-  addPizza(pizza:Pizza){
-    this.storage.set('pizza', "1");
+  addPizza(pizza){
+    this.storage.set('pizza', pizza.name);
       let toast = this.toastCtrl.create({
         message: 'la pizza à bien était ajouté',
         duration: 3000,
