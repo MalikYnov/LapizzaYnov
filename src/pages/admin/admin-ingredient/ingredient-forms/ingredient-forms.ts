@@ -43,7 +43,7 @@ export class IngredientFormPage{
       // }
     }
   
-    addIngredient(){
+    addIngredient(event){
       //  if(this.update){
       //   // this.ingredientService.update(this.ingredient, this.contact.id);
       //  }else{
