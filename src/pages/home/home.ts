@@ -27,7 +27,7 @@ export class HomePage {
     alert(this.storage.get('pizza'));
   }
   displayPizza(pizza){
-    this.navCtrl.push(DisplayPizza,{id:pizza.id});
+    this.navCtrl.setRoot(DisplayPizza,{id:pizza.id});
     
   }
 
