@@ -1,3 +1,14 @@
+Malik Verdiere
+
+
+ionic View : de759924
+
+J'ai eu des petits soucu avec mon api, Donc pour la gestion je le fait en local, mais pour les ingredients l'api fonctionne.
+En esperant que tu sois sois compréhensif.
+
+
+
+
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
