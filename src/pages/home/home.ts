@@ -15,13 +15,10 @@ export class HomePage {
   pushPage: any;
   pizzaList:Pizza[];
   constructor(public navParams: NavParams, public pizzaService:PizzaService, private storage: Storage, private toastCtrl:ToastController) {
-    console.log('Constructr');
-    this.pushPage = DisplayPizza;
-    this.params = { id: 42 };
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DisplayPizzaPage');
+
     this.pizzaList = this.pizzaService.get();
   }
 

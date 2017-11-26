@@ -14,6 +14,9 @@ export class IngredientFormPage{
 
     // private ingredient:Ingredient;
     ingredient:Ingredient;
+    name:string;
+    weight:string;
+    name:string;
     constructor(public navCtrl: NavController, public navParams: NavParams,private ingredientService :IngredientService) { 
       // this.ingredient.name= " ";
       // this.ingredient.weight= " ";
