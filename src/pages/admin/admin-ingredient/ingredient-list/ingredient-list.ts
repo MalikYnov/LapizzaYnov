@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import {IngredientService} from '../../../../providers/ingredient-service/ingredient-service'
 import {Ingredient} from '../../../../model/Ingredient'
 import{IngredientFormPage} from '../ingredient-forms/ingredient-forms'
@@ -10,13 +10,12 @@ import{IngredientFormPage} from '../ingredient-forms/ingredient-forms'
 export class IngredientListPage {
 
   ingredientList: Ingredient[];
-  constructor(public navCtrl: NavController, public ingredientService: IngredientService) {
+  constructor(public navCtrl: NavController,public navParams: NavParams, public ingredientService: IngredientService) {
 
   }
 
   ionViewDidLoad() {
 
-    console.log('ionViewDidLoad DisplayPizzaPage');
     this.ingredientService.get().then((data: Array<Ingredient>) =>{
         this.ingredientList = data;
     });
@@ -25,6 +24,7 @@ export class IngredientListPage {
   }
 
   addIngredient(){
+    alert("aaaa")
     this.navCtrl.push(IngredientFormPage);
   }
 }

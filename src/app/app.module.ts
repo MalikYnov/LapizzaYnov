@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { DisplayPizza } from '../pages/display-pizza/display-pizza';
 import { TabsPage } from '../pages/tabs/tabs';
 import {IngredientListPage} from '../pages/admin/admin-ingredient/ingredient-list/ingredient-list';
+import {IngredientFormPage} from '../pages/admin/admin-ingredient/ingredient-forms/ingredient-forms'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PizzaService } from '../providers/pizza-service/pizza-service';
@@ -21,6 +22,7 @@ import { IngredientService } from '../providers/ingredient-service/ingredient-se
     TabsPage,
     DisplayPizza,
     IngredientListPage,
+    IngredientFormPage
 
   ],
   imports: [
@@ -39,7 +41,8 @@ import { IngredientService } from '../providers/ingredient-service/ingredient-se
     HomePage,
     TabsPage,
     DisplayPizza,
-    IngredientListPage
+    IngredientListPage,
+    IngredientFormPage
 
   ],
   providers: [
