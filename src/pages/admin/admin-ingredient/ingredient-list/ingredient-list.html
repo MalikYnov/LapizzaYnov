@@ -22,14 +22,30 @@
   </div>  -->
 
   <ion-content>
-      <button ion-item (click)="addIngredient()">
+      <button ion-item (click)="addIngredient($event)">
           <ion-icon name="add" item-start>
           
           </ion-icon>
           Ajouter un ingredient
         </button>
-        <div class="list" *ngFor="let ingredient of ingredientList">
-            <div class="item">{{ingredient.name}}</div>
-         </div>
+
+         <div *ngFor="let ingredient of ingredientList">
+            <ion-card>
+                <ion-card-content>
+                  <ion-card-title>
+                    {{ingredient.name}}
+                    </ion-card-title>
+                  <p>
+                      {{ingredient.weight}}
+                  </p>
+                  <button ion-item (click)="update(ingredient)">
+                      <ion-icon name="add" item-start></ion-icon>
+                      modifier
+                    </button>
+
+                </ion-card-content>
+              </ion-card>
+          
+        </div>
     
 </ion-content>
