@@ -34,16 +34,17 @@ export class DisplayPizza{
   addPizza(pizza){
     let confirm = this.alertCtrl.create({
       title: 'Ajouter la pizza',
-      message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
+      message: this.pizza.name,
       buttons: [
         {
-          text: 'non',
+          text: 'Non',
           handler: () => {
           }
         },
         {
-          text: 'Agree',
+          text: 'Oui',
           handler: () => {
+            
             this.storage.set('pizza', pizza.name);
             let toast = this.toastCtrl.create({
               message: 'la pizza à bien était ajouté',

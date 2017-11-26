@@ -1,0 +1,48 @@
+<!-- <div class="row">   
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>weight</th>
+          <th>price</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let ingredient of ingredientsList">
+        <tr>
+            <td>{{ingredient.name}}</td>
+            <td>{{ingredient.weight}}</td>
+            <td>{{ingredient.price}} €</td>
+            <td><a routerLink="/ingredient/forms/{{ingredient.id}}"><clr-icon shape="note" class="is-solid"></clr-icon></a></td>
+            <td><a routerLink="/ingredient/delete/{{ingredient.id}}"><clr-icon shape="trash" class="is-solid" style="color:red"></clr-icon></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  -->
+
+  <ion-content>
+      <button ion-item (click)="newIngredient($event)">
+          <ion-icon name="add" item-start> </ion-icon>
+          Ajouter un ingredient
+        </button>
+
+         <div *ngFor="let ingredient of ingredientList">
+            <ion-card>
+                <ion-card-content>
+                  <ion-card-title>
+                    {{ingredient.name}}
+                    </ion-card-title>
+                  <p>
+                      {{ingredient.weight}}
+                  </p>
+                  <button ion-item (click)="update(ingredient)">
+                      <ion-icon name="create" item-start></ion-icon>
+                    </button>
+
+                </ion-card-content>
+              </ion-card>
+          
+        </div>
+    
+</ion-content>
