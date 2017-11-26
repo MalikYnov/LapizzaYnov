@@ -14,7 +14,7 @@ export class HomePage {
   params: Object;
   pushPage: any;
   pizzaList:Pizza[];
-  constructor(public navParams: NavParams, public pizzaService:PizzaService, private storage: Storage, private toastCtrl:ToastController) {
+  constructor(public navCtrl: NavController,public navParams: NavParams, public pizzaService:PizzaService, private storage: Storage, private toastCtrl:ToastController) {
   }
 
   ionViewDidLoad() {
@@ -43,8 +43,9 @@ export class HomePage {
     
   }
 
-  displayPizza(pizza: any){
-
+  displayPizza(pizza){
+    let _id = pizza.id;
+      this.navCtrl.push(DisplayPizza, {id:_id})
     
   }
 
