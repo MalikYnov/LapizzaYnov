@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
 
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { DisplayPizza } from '../pages/display-pizza/display-pizza';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -18,7 +17,6 @@ import { IngredientService } from '../providers/ingredient-service/ingredient-se
 @NgModule({
   declarations: [
     MyApp,
-    ContactPage,
     HomePage,
     TabsPage,
     DisplayPizza,
@@ -38,7 +36,6 @@ import { IngredientService } from '../providers/ingredient-service/ingredient-se
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    ContactPage,
     HomePage,
     TabsPage,
     DisplayPizza,
