@@ -15,9 +15,9 @@ export class IngredientFormPage{
     private update:boolean;
     ingredient:Ingredient;
     constructor(private ingredientService :IngredientService) { 
-      this.ingredient.name="";
-      this.ingredient.weight="";
-      this.ingredient.price= 0;
+      // this.ingredient.name= " ";
+      // this.ingredient.weight= " ";
+      // this.ingredient.price = 0;
     }
     
   
