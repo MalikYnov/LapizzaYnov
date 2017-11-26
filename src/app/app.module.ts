@@ -13,6 +13,7 @@ import {IngredientListPage} from '../pages/admin/admin-ingredient/ingredient-lis
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PizzaService } from '../providers/pizza-service/pizza-service';
+import { IngredientService } from '../providers/ingredient-service/ingredient-service';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,9 @@ import { PizzaService } from '../providers/pizza-service/pizza-service';
     SplashScreen,
     IonicStorageModule,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    PizzaService
+    PizzaService,
+    IngredientService
+    
   ]
 })
 export class AppModule {}
