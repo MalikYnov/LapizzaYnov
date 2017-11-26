@@ -10,7 +10,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { DisplayPizza } from '../pages/display-pizza/display-pizza';
 import { TabsPage } from '../pages/tabs/tabs';
-
+import {IngredientListPage} from '../pages/admin/admin-ingredient/ingredient-list/ingredient-list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PizzaService } from '../providers/pizza-service/pizza-service';
@@ -22,7 +22,8 @@ import { PizzaService } from '../providers/pizza-service/pizza-service';
     ContactPage,
     HomePage,
     TabsPage,
-    DisplayPizza
+    DisplayPizza,
+    IngredientListPage
   ],
   imports: [
     BrowserModule,
