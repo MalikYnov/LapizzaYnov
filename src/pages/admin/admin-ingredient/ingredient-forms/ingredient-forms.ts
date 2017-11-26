@@ -50,8 +50,12 @@ export class IngredientFormPage{
       this.ingredient.name= this.name;
       this.ingredient.weight= this.weight;
       this.ingredient.price = this.price;
-          this.ingredientService.create(this.ingredient).subscribe(data => {
-          });
+      alert("eeeeeee");
+      this.ingredientService.create(this.ingredient).subscribe(data => {
+      alert(data);
+      this.navCtrl.pop();
+      
+      });
       }
     // }
   }
