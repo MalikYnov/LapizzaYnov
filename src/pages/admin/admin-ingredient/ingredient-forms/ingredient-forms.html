@@ -1,25 +1,17 @@
 
 <ion-header>
     
-    
-    
       <ion-navbar>
     
-        <ion-title>User</ion-title>
+        <ion-title>Ajouter un ingredient</ion-title>
     
       </ion-navbar>
-    
-    
-    
+
     </ion-header>
     
-    
-    
-    
+
     
     <ion-content padding>
-    
-      <div *ngIf=formsIsVisible class="blockUser">
     
       <label>nom</label>
     
@@ -34,16 +26,6 @@
     
       <br>
     
-      <button ion-button secondary (click)="addingredient(event)">Ajouter</button>
-    
-    </div>
-    
-    
-    
-    <div *ngIf="msgIsVisible"> 
-    
-        <p>Félicitation {{user.username}} votre compte est créer</p>
-    
-    </div>
-    
+      <button ion-button secondary (click)="addIngredient(event)">Ajouter</button>
+ 
     </ion-content>

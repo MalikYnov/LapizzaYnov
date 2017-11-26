@@ -28,8 +28,28 @@
           </ion-icon>
           Ajouter un ingredient
         </button>
-        <div class="list" *ngFor="let ingredient of ingredientsList">
-            <div class="item">{{ingredient.name}}</div>
-         </div>
+        <div *ngFor="let ingredient of ingredientList">
+
+            <ion-card>
+                <ion-card-content>
+                  <ion-card-title>
+                      {{ingredient.name}}
+                    </ion-card-title>
+                  <p>
+                      {{ingredient.weight}}
+                  </p>
+                  <button ion-item (click)="update(pizza)">
+                      <ion-icon name="add" item-start></ion-icon>
+                      Modifier
+                    </button>
+                        <ion-icon name="eye" item-start>
+                        
+                        </ion-icon>
+                        voir
+                      </button>
+                </ion-card-content>
+              </ion-card>
+          
+        </div>
     
 </ion-content>
