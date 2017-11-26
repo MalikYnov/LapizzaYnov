@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {IngredientService} from '../../../../providers/ingredient-service/ingredient-service'
 import {Ingredient} from '../../../../model/Ingredient'
+import{IngredientFormPage} from '../ingredient-forms/ingredient-forms'
 @Component({
   selector: 'page-ingredient-list',
   templateUrl: 'ingredient-list.html'
@@ -21,5 +22,9 @@ export class IngredientListPage {
     });
     
     console.log(this.ingredientService);
+  }
+
+  addIngredient(){
+    this.navCtrl.push(IngredientFormPage);
   }
 }

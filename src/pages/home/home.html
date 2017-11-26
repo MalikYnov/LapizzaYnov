@@ -20,12 +20,14 @@
               <p>
                   {{pizza.desc}}
               </p>
-              <button ion-item (click)="addPizza(pizza)">
+              <button ion-item (click)="addPizza($event)">
                   <ion-icon name="add" item-start></ion-icon>
                   ajouter
                 </button>
                 <button ion-item (click)="displayPage(pizza)">
-                    <ion-icon name="eye" item-start></ion-icon>
+                    <ion-icon name="eye" item-start>
+                    
+                    </ion-icon>
                     voir
                   </button>
             </ion-card-content>
