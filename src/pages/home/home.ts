@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Pizza } from '../../model/Pizza'
 import { NavController, NavParams } from 'ionic-angular';
 import {PizzaService} from '../../providers/pizza-service/pizza-service'
+import {DisplayPizza} from '../display-pizza/display-pizza'
 import { Storage } from '@ionic/storage';
 @Component({
   selector: 'page-home',
@@ -24,6 +25,10 @@ export class HomePage {
   }
   displayCart($event){
     alert(this.storage.get('pizza'));
+  }
+  displayPizza(pizza){
+    this.navCtrl.push(DisplayPizza,{id:pizza.id});
+    
   }
 
 }

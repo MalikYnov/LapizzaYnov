@@ -15,18 +15,15 @@ import {Pizza} from '../../model/Pizza'
 })
 export class DisplayPizza{
 
-  pizzaList:Pizza[];
+  pizza:Pizza;
   test:string;
   constructor(public navCtrl: NavController, public navParams: NavParams, public pizzaService:PizzaService) {
     console.log('Constructr');
   }
 
   ionViewDidLoad() {
-    this.test="aaaaa";
-    this.pizzaList = [];
-    console.log('ionViewDidLoad DisplayPizzaPage');
-    this.pizzaList = this.pizzaService.get();
-    console.log(this.pizzaList);
+    let id = this.navParams.get('id');
+    this.pizza = this.pizzaService.getByid(id);
   }
 
 }
