@@ -18,9 +18,9 @@ export class IngredientFormPage{
     weight:string;
     price:number;
     constructor(public navCtrl: NavController, public navParams: NavParams,private ingredientService :IngredientService) { 
-      // this.ingredient.name= " ";
-      // this.ingredient.weight= " ";
-      // this.ingredient.price = 0;
+      this.ingredient.name= " ";
+      this.ingredient.weight= " ";
+      this.ingredient.price = 0;
     }
     
   
@@ -47,6 +47,8 @@ export class IngredientFormPage{
       //  if(this.update){
       //   // this.ingredientService.update(this.ingredient, this.contact.id);
       //  }else{
+      alert("aaa");
+      
       this.ingredient.name= this.name;
       this.ingredient.weight= this.weight;
       this.ingredient.price = this.price;
