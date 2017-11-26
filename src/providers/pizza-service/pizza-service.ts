@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {Pizza} from '../../model/pizza'
+import {Pizza} from '../../model/Pizza'
 import 'rxjs/add/operator/map';
 
 /*

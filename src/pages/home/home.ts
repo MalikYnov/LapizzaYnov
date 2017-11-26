@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Pizza } from '../../model/pizza'
+import { Pizza } from '../../model/Pizza'
 import { NavController, NavParams } from 'ionic-angular';
 import {PizzaService} from '../../providers/pizza-service/pizza-service'
 import { Storage } from '@ionic/storage';

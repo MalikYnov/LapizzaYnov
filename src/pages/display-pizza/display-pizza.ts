@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {PizzaService} from '../../providers/pizza-service/pizza-service'
-import {Pizza} from '../../model/pizza'
+import {Pizza} from '../../model/Pizza'
 /**
  * Generated class for the DisplayPizzaPage page.
  *
