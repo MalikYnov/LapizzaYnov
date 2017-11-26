@@ -28,7 +28,11 @@ import { IngredientService } from '../providers/ingredient-service/ingredient-se
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot(),
+    IonicStorageModule.forRoot({
+      name: '__mydb',
+         driverOrder: ['indexeddb', 'sqlite', 'websql']
+    }),
+
     HttpClientModule
   ],
   bootstrap: [IonicApp],
