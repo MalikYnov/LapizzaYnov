@@ -23,7 +23,7 @@ export class IngredientListPage {
     console.log(this.ingredientService);
   }
 
-  addIngredient(){
+  newIngredient(){
     this.navCtrl.push(IngredientFormPage);
   }
 
