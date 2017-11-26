@@ -47,10 +47,10 @@ export class IngredientFormPage{
       //  if(this.update){
       //   // this.ingredientService.update(this.ingredient, this.contact.id);
       //  }else{
-      alert("aaa");
+
       
-      this.ingredient.name= this.name;
-      this.ingredient.weight= this.weight;
+      this.ingredient.name = this.name;
+      this.ingredient.weight = this.weight;
       this.ingredient.price = this.price;
       alert("eeeeeee");
       this.ingredientService.create(this.ingredient).subscribe(data => {
