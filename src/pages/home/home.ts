@@ -26,8 +26,8 @@ export class HomePage {
   displayCart($event){
     alert(this.storage.get('pizza'));
   }
-  displayPizza(pizza){
-    this.navCtrl.setRoot(DisplayPizza,{id:pizza.id});
+  displayPizza(pizza: any){
+    this.navCtrl.push(DisplayPizza);
     
   }
 
