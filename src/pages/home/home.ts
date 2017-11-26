@@ -9,10 +9,13 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  params: Object;
+  pushPage: any;
   pizzaList:Pizza[];
-  constructor(public nav: Nav, public navParams: NavParams, public pizzaService:PizzaService, private storage: Storage) {
+  constructor(public navParams: NavParams, public pizzaService:PizzaService, private storage: Storage) {
     console.log('Constructr');
+    this.pushPage = DisplayPizza;
+    this.params = { id: 42 };
   }
 
   ionViewDidLoad() {
@@ -28,7 +31,7 @@ export class HomePage {
   }
 
   displayPizza(pizza: any){
-    this.nav.push(DisplayPizza);
+
     
   }
 
