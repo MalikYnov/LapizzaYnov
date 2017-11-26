@@ -16,7 +16,7 @@ export class IngredientFormPage{
     ingredient:Ingredient;
     name:string;
     weight:string;
-    name:string;
+    price:number;
     constructor(public navCtrl: NavController, public navParams: NavParams,private ingredientService :IngredientService) { 
       // this.ingredient.name= " ";
       // this.ingredient.weight= " ";
@@ -26,9 +26,9 @@ export class IngredientFormPage{
   
     ionViewDidLoad() {
       //let id = this.route.snapshot.params['id'];
-      this.ingredient.name= "";
-      this.ingredient.weight= "";
-      this.ingredient.price = null;
+      this.name= "";
+      this.weight= "";
+      this.price = null;
   
       // if(id != null){
       //   this.update = true,
