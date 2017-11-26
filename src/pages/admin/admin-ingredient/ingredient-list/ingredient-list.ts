@@ -24,6 +24,7 @@ export class IngredientListPage {
   }
 
   newIngredient(){
+    alert("aaaaaaaa");
     this.navCtrl.push(IngredientFormPage);
   }
 
