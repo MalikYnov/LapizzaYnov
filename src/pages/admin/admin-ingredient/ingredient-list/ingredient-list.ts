@@ -24,7 +24,10 @@ export class IngredientListPage {
   }
 
   addIngredient(){
-    alert("aaaa")
     this.navCtrl.push(IngredientFormPage);
+  }
+
+  update(ingredient){
+    this.navCtrl.push(IngredientFormPage, {id:ingredient.id});
   }
 }
