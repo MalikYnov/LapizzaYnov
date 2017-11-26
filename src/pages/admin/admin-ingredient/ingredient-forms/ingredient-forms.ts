@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
 // import { NavController } from 'ionic-angular';
 import {IngredientService} from '../../../../providers/ingredient-service/ingredient-service'
 import {Ingredient} from '../../../../model/Ingredient'
@@ -14,7 +15,7 @@ export class IngredientFormPage{
     // private ingredient:Ingredient;
     private update:boolean;
     ingredient:Ingredient;
-    constructor(private ingredientService :IngredientService) { 
+    constructor(public navCtrl: NavController, public navParams: NavParams,private ingredientService :IngredientService) { 
       // this.ingredient.name= " ";
       // this.ingredient.weight= " ";
       // this.ingredient.price = 0;
