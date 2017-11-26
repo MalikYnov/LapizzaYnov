@@ -26,7 +26,7 @@ export class PizzaListPage {
     this.navCtrl.push(PizzaFormPage);
   }
 
-  // update(ingredient){
-  //   this.navCtrl.push(IngredientFormPage);
-  // }
+   update(ingredient){
+     this.navCtrl.push(PizzaFormPage);
+   }
 }

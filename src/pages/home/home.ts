@@ -25,7 +25,7 @@ export class HomePage {
   addPizza(pizza){
     this.storage.set('pizza', pizza.name);
       let toast = this.toastCtrl.create({
-        message: 'la pizza à bien était ajouté',
+        message: 'La pizza à bien était ajouté',
         duration: 3000,
         position: 'bottom'
       });
@@ -46,8 +46,7 @@ export class HomePage {
   displayPizza(pizza){
     let _id = pizza.id;
     alert(pizza.id);
-    this.navCtrl.push(DisplayPizza, {id:1})
-    
+    this.navCtrl.push(DisplayPizza, {id:_id})
   }
 
 }
