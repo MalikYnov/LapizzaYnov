@@ -47,6 +47,9 @@ export class IngredientFormPage{
       //  if(this.update){
       //   // this.ingredientService.update(this.ingredient, this.contact.id);
       //  }else{
+      this.ingredient.name= this.name;
+      this.ingredient.weight= this.weight;
+      this.ingredient.price = this.price;
           this.ingredientService.create(this.ingredient).subscribe(data => {
           });
       }
