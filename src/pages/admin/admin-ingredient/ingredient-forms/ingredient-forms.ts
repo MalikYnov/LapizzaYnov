@@ -13,8 +13,13 @@ export class IngredientFormPage{
 
     // private ingredient:Ingredient;
     private update:boolean;
-    constructor(private ingredientService :IngredientService) { }
     ingredient:Ingredient;
+    constructor(private ingredientService :IngredientService) { 
+      this.ingredient.name="";
+      this.ingredient.weight="";
+      this.ingredient.price= 0;
+    }
+    
   
     ionViewDidLoad() {
       //let id = this.route.snapshot.params['id'];
