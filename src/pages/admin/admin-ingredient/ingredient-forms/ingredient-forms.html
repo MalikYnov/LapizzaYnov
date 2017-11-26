@@ -10,22 +10,19 @@
 </ion-header>
     
 
-    
-  <ion-content padding>
     <div>
       <label>nom</label>
     
-      <ion-input style="border:#488aff solid 1px" [(ngModel)]="ingredient.name" type="text"></ion-input>
+      <ion-input style="border:#488aff solid 1px" [(ngModel)]=name type="text"></ion-input>
     
       <label>Poid</label>
     
-      <ion-input style="border:#488aff solid 1px" [(ngModel)]="ingredient.weight" type="text"></ion-input>
+      <ion-input style="border:#488aff solid 1px" [(ngModel)]=weight type="text"></ion-input>
       <label>prix</label>
       
-        <ion-input style="border:#488aff solid 1px" [(ngModel)]="ingredient.price" type="text"></ion-input>
+        <ion-input style="border:#488aff solid 1px" [(ngModel)]=price type="text"></ion-input>
     
       <br>
     
       <button ion-button secondary (click)="addIngredient(event)">Ajouter</button>
     </div>
-  </ion-content>
