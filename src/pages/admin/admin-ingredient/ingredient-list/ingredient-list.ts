@@ -11,7 +11,7 @@ export class IngredientListPage {
 
   ingredientList: Ingredient[];
   constructor(public navCtrl: NavController,public navParams: NavParams, public ingredientService: IngredientService) {
-
+    this.ingredientList = [];
   }
 
   ionViewDidLoad() {
