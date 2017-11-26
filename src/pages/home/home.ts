@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Pizza } from '../../model/Pizza'
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, Nav } from 'ionic-angular';
 import {PizzaService} from '../../providers/pizza-service/pizza-service'
 import {DisplayPizza} from '../display-pizza/display-pizza'
 import { Storage } from '@ionic/storage';
@@ -11,7 +11,7 @@ import { Storage } from '@ionic/storage';
 export class HomePage {
 
   pizzaList:Pizza[];
-  constructor(public navCtrl: NavController, public navParams: NavParams, public pizzaService:PizzaService, private storage: Storage) {
+  constructor(public nav: Nav, public navParams: NavParams, public pizzaService:PizzaService, private storage: Storage) {
     console.log('Constructr');
   }
 
@@ -26,8 +26,9 @@ export class HomePage {
   displayCart($event){
     alert(this.storage.get('pizza'));
   }
+
   displayPizza(pizza: any){
-    this.navCtrl.push(DisplayPizza);
+    this.nav.push(DisplayPizza);
     
   }
 
