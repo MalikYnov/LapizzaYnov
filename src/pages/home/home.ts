@@ -25,12 +25,12 @@ export class HomePage {
     this.pizzaList = this.pizzaService.get();
   }
 
-  addPizza($event){
-    this.storage.set('pizza', "1");
+  addPizza(pizza:Pizza){
+    this.storage.set('pizza', pizza.id);
       let toast = this.toastCtrl.create({
-        message: 'User was added successfully',
+        message: 'la pizza à bien était ajouté',
         duration: 3000,
-        position: 'top'
+        position: 'bottom'
       });
     
       toast.onDidDismiss(() => {
@@ -40,7 +40,10 @@ export class HomePage {
       toast.present();
   }
   displayCart($event){
-    alert(this.storage.get('pizza'));
+    this.storage.get('pizza').then((val) => {
+      alert(val);
+    });
+    
   }
 
   displayPizza(pizza: any){
